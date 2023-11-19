@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    android:padding="32dp"
-    android:weightSum="6"
-    tools:context=".LogInActivity">
+    android:padding="50dp"
+    tools:context=".SignUpActivity">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,6 +74,33 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="32dp"
+            android:text="Name*"
+            android:layout_marginStart="16dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_grey"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginStart="16dp"
+            android:inputType="text"
+            android:hint="Vivek Kumar"
+            android:padding="12dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
             android:text="Email*"
             android:layout_marginStart="16dp"
             android:textSize="18dp"
@@ -128,7 +155,6 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/gradient_bg"
@@ -149,10 +175,10 @@
                 android:textColor="@color/light_grey"
                 />
             <TextView
-                android:id="@+id/sigin"
+                android:id="@+id/sigiup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SignIn"
+                android:text="SignUp"
                 android:gravity="top"
                 android:textColor="@color/white"
                 android:textStyle="bold"
