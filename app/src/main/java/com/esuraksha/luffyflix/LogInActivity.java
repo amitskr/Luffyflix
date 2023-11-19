@@ -2,6 +2,7 @@ package com.esuraksha.luffyflix;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -15,7 +16,8 @@ public class LogInActivity extends AppCompatActivity {
 
         login = findViewById(R.id.login);
         login.setOnClickListener(v->{
-
+                startActivity(new Intent(LogInActivity.this,SignUpActivity.class));
+                finish();
         });
     }
 }
