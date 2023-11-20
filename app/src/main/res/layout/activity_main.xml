@@ -42,7 +42,8 @@
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/person"
             android:padding="4dp"
-            android:src="@drawable/baseline_search_24" />
+            android:src="@drawable/baseline_search_24"
+            app:tint="@color/light_grey" />
 
         <ImageView
             android:id="@+id/person"
@@ -50,7 +51,8 @@
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
             android:padding="4dp"
-            android:src="@drawable/round_supervised_user_circle_24" />
+            android:src="@drawable/round_supervised_user_circle_24"
+            app:tint="@color/light_grey" />
 
 
     </RelativeLayout>
@@ -92,7 +94,7 @@
 
            <LinearLayout
                android:layout_width="match_parent"
-               android:layout_height="220dp"
+               android:layout_height="250dp"
                android:orientation="horizontal"
                android:layout_margin="10dp"
                >
@@ -140,8 +142,6 @@
                     />
             </LinearLayout>
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -152,11 +152,13 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:gravity="center">
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/logo"/>
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/baseline_info_24"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -167,6 +169,7 @@
                         android:gravity="center"
                         />
                 </LinearLayout>
+
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -175,15 +178,18 @@
                     android:textSize="24sp"
                     android:text="WATCH NOW"
                     android:layout_marginHorizontal="8dp"/>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:gravity="center">
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/logo"/>
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/baseline_playlist_add_24"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -212,17 +218,11 @@
                     />
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"/>
-            </LinearLayout>
-
+                android:orientation="vertical"/>
 
         </LinearLayout>
 

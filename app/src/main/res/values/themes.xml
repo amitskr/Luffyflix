@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Luffyflix" parent="Base.Theme.Luffyflix" />
+
+    <style name="popup_window_animation">
+        <item name="android:windowEnterAnimation">@anim/popup_window_enter_exit</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_enter_exit</item>
+    </style>
+
 </resources>

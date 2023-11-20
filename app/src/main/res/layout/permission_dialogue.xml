@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/baseline_folder_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allow App to access photos, media, and files on your device?"
+        android:layout_margin="8dp"/>
+    <Button
+        android:id="@+id/allow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allow"/>
+    <Button
+        android:id="@+id/deny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deny"/>
+    <Button
+        android:id="@+id/allow_sandbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allow Sandbox"/>
+
+</LinearLayout>
